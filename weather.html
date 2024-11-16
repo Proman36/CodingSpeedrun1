@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css">
+    <title>Weather Conditions Dashboard</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Weather Conditions Dashboard</h1>
+            <p>Current Weather Data</p>
+        </header>
+        <div class="weather-cards">
+            <div class="weather-card co">
+                <div class="icon co-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24" height="24">
+                        <circle cx="12" cy="12" r="10" />
+                    </svg>
+                </div>
+                <h2>CO</h2>
+                <p id="co">2179.3 µg/m³</p>
+            </div>
+            <div class="weather-card so2">
+                <div class="icon so2-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="24" height="24">
+                        <rect width="24" height="24" />
+                    </svg>
+                </div>
+                <h2>SO2</h2>
+                <p id="so2">61.05 µg/m³</p>
+            </div>
+            <div class="weather-card no2">
+                <div class="icon no2-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24" height="24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
+                    </svg>
+                </div>
+                <h2>NO2</h2>
+                <p id="no2">53.095 µg/m³</p>
+            </div>
+            <div class="weather-card o3">
+                <div class="icon o3-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24" height="24">
+                        <path d="M12 4a4 4 0 0 0-4 4c0 1.1.9 2 2 2h2a2 2 0 0 1 0 4h-2a4 4 0 1 0 0 8h4a4 4 0 0 0 0-8h-2a2 2 0 0 1 0-4h2a4 4 0 0 0 0-8h-4z" />
+                    </svg>
+                </div>
+                <h2>O3</h2>
+                <p id="o3">61 µg/m³</p>
+            </div>
+            <div class="weather-card temperature">
+                <div class="icon temp-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="24" height="24">
+                        <path d="M12 2a4 4 0 0 0-4 4v8a4 4 0 0 0 8 0V6a4 4 0 0 0-4-4zm0 18a2 2 0 0 1-2-2V6a2 2 0 0 1 4 0v8a2 2 0 0 1-2 2z" />
+                    </svg>
+                </div>
+                <h2>Temperature</h2>
+                <p id="temperature">29.1°C</p>
+            </div>
+            <div class="weather-card wind-speed">
+                <div class="icon wind-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="24" height="24">
+                        <path d="M3 10h18v4H3zm0 4h12v4H3zm0 4h6v4H3z" />
+                    </svg>
+                </div>
+                <h2>Wind Speed</h2>
+                <p id="ws">9.6 mph</p>
+            </div>
+            <div class="weather-card uv">
+                <div class="icon uv-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24" height="24">
+                        <circle cx="12" cy="12" r="10" />
+                        <line x1="12" y1="2" x2="12" y2="6" stroke="white" stroke-width="2"/>
+                        <line x1="12" y1="18" x2="12" y2="22" stroke="white" stroke-width="2"/>
+                        <line x1="2" y1="12" x2="6" y2="12" stroke="white" stroke-width="2"/>
+                        <line x1="18" y1="12" x2="22" y2="12" stroke="white" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h2>UV Index</h2>
+                <p id="uv">5.8</p>
+            </div>
+            <div class="weather-card pressure">
+                <div class="icon pressure-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24" height="24">
+                        <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z" />
+                    </svg>
+                </div>
+                <h2>Pressure</h2>
+                <p id="pressure">1014 mb</p>
+            </div>
+            <div class="weather-card cloud">
+                <div class="icon cloud-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24" height="24">
+                        <path d="M20 16.39A4.5 4.5 0 0 0 18.5 12a4.5 4.5 0 0 0-8.5 0A4.5 4.5 0 0 0 6 16.39A4.5 4.5 0 0 0 20 16.39z" />
+                    </svg>
+                </div>
+                <h2>Cloud Cover</h2>
+                <p id="cloud">0%</p>
+            </div>
+            <div class="weather-card humidity">
+                <div class="icon humidity-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="24" height="24">
+                        <path d="M12 2a10 10 0 0 0-10 10c0 5.52 4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm0 18a8 8 0 0 1-8-8c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
+                    </svg>
+                </div>
+                <h2>Humidity</h2>
+                <p id="humidity">45%</p>
+            </div>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>

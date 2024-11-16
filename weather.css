@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #e0f7fa, #b2ebf2);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+header h1 {
+    font-size: 5vw;
+    color: #00796b;
+}
+
+#app {
+    width: 90vw;
+    text-align: center;
+}
+
+.weather-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.weather-card {
+    background-color: white;
+    border-radius: 1.5vh;
+    box-shadow: 0 0.6vh 3vh rgba(0, 0, 0, 0.2);
+    padding: 2vh;
+    width: 20vw;
+    text-align: center;
+    min-width: 150px;
+}
+
+.icon {
+    margin-bottom: 1vh;
+}
+
+.co {
+    background-color: #cfd8dc;
+}
+
+.so2 {
+    background-color: #ffccbc;
+}
+
+.no2 {
+    background-color: #ffe0b2;
+}
+
+.o3 {
+    background-color: #b2dfdb;
+}
+
+.temperature {
+    background-color: #ffecb3;
+}
+
+.wind-speed {
+    background-color: #bbdefb;
+}
+
+.uv {
+    background-color: #d1c4e9;
+}
+
+.pressure {
+    background-color: #f8bbd0;
+}
+
+.cloud {
+    background-color: #e1bee7;
+}
+
+.humidity {
+    background-color: #c5cae9;
+}
+
+.weather-card h2 {
+    font-size: 3vw;
+    color: #004d40;
+    margin: 1vh 0;
+}
